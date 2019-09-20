@@ -33,7 +33,6 @@ body {
 
 p{
     font-size: 0.75em;
-    padding: 1rem;
     line-height: 25px;
 }
 
@@ -80,7 +79,6 @@ p{
 /* Social links*/
 .social-links{
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -91,6 +89,14 @@ p{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
+}
+
+.social-links li a i{
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size: 2.5em;
+    margin: 7.5px;
+    padding: 7.5px
 }
 
 
@@ -220,6 +226,7 @@ p{
     font-weight: 400;
     color: white;
     font-size: 1rem;
+    width: 150px;
 }
 
 .black-decoration{
@@ -234,6 +241,10 @@ footer{
 footer .social-links {
     margin: 0;
 }
+.contact-form> input{
+    margin-bottom: 1em;
+}
+
 
 .menu {
     background-color: #112935;
@@ -335,6 +346,10 @@ footer .social-links {
         margin: 7.5px;
         padding: 7.5px
     }
+    .post ul li{
+        margin: 1em 1em;
+
+    }
     
     .show-desktop>i{
         font-size: 3em;
@@ -342,6 +357,9 @@ footer .social-links {
         margin-bottom: 2em;
     }
     
+    
+
+
     .header{
         justify-content: space-between;
         width: 100%;
