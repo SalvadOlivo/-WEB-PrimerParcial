@@ -81,7 +81,6 @@ p{
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -104,6 +103,7 @@ p{
     padding: 1em;
     margin-bottom: -2px;
 }
+
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -127,6 +127,8 @@ p{
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .post article img{
@@ -310,6 +312,76 @@ footer .social-links {
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
+       .container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1024px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .social-links{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    
+    }
+    .social-links li a i{
+        color: #D7DEE6;
+        text-decoration: none;
+        font-size: 2.5em;
+        margin: 7.5px;
+        padding: 7.5px
+    }
+    
+    .show-desktop>i{
+        font-size: 3em;
+        color: #0AC693;
+        margin-bottom: 2em;
+    }
+    
+    .header{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+
+    }
+    .big-hero > .container{
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    .big-hero img{
+        display: block;
+        margin: auto;
+    }
+    }
+    .about h2{
+        width: 100%;
+        text-align: center;
+        
+    }
+       .about{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+       }
+       .about div{
+           flex: 1;
+
+       }
+
+
+       nav>.show-desktop :hover>a{
+        opacity: 50%;
+        color: red;
+
+    }
+
+  
 
 
 
@@ -319,8 +391,45 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
     .container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         max-width: 1440px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+     .big-hero > .container{
+         display: flex;
+         flex-flow: column wrap;
+         
+     }
+
+    .about h2{
+        width: 100%;
+        text-align: center;
+        
+    }
+       .about{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+       }
+       .about div{
+           flex: 1;
+
+       }
+       .post h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 1em;
+        justify-content: center;
+    }
+
+    nav>.show-desktop :hover>a{
+        opacity: 50%;
+        color: red;
+
     }
 }
