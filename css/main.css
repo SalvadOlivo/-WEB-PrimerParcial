@@ -275,7 +275,7 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+  /*aquí definimos el comportamiento del bloque que contiene los li con las imagenes del green area**/
     .post ul {
         list-style: none;
         display: flex;
@@ -283,10 +283,11 @@ footer .social-links {
         justify-content: center;
     }
     
+    /*aqui definimos las dimensiones y comportamiento de las imagenes del green area*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
-        margin: 1rem 2rem;
+        margin: 1em 1em;
         flex: 1 0 300px;
     }
 
@@ -298,6 +299,14 @@ footer .social-links {
 
     .show-desktop {
         display: block;
+    }
+
+    /* aquí cambio el color y las dimensiones de la flecha*/
+
+    .show-desktop>i{
+        font-size: 3em;
+        color: #0AC693;
+        margin-bottom: 2em;
     }
 
     .hide-desktop {
@@ -323,6 +332,9 @@ footer .social-links {
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
+       /*aqui se define las dimensiones de la pantalla */
+       /*se coloca todo en linea*/
+       /*y se centra*/
        .container {
         width: 100%;
         margin: 0 auto;
@@ -332,6 +344,9 @@ footer .social-links {
         justify-content: center;
         
     }
+
+    /* se define el comportamiento de las imagenes facebook y twitter*/
+    /*y le quite el margin top para que no existiera tanto espacio entre las imagenes*/ 
     .social-links{
         list-style: none;
         display: flex;
@@ -339,6 +354,8 @@ footer .social-links {
         justify-content: center
     
     }
+
+    /*aquí le cambie las dimesiones a las imagenes las hice mas grandes */
     .social-links li a i{
         color: #D7DEE6;
         text-decoration: none;
@@ -346,11 +363,16 @@ footer .social-links {
         margin: 7.5px;
         padding: 7.5px
     }
+
+    /*puse margin porque se me habían movido las imagenes del green area */
+    /*asique le asigne un margin para que me salieran alapar las 3*/
     .post ul li{
         margin: 1em 1em;
 
     }
     
+    /*aqui se le da estilo a la flecha*/
+    /*le asigne un margin para crear mas espacio entre la flecha y la green area*/
     .show-desktop>i{
         font-size: 3em;
         color: #0AC693;
@@ -359,13 +381,14 @@ footer .social-links {
     
     
 
-
+/* se asignas las dimensiones */
     .header{
         justify-content: space-between;
         width: 100%;
         margin: 0;
 
     }
+    
     .big-hero > .container{
         display: flex;
         flex-flow: column wrap;
