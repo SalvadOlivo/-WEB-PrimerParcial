@@ -382,13 +382,14 @@ footer .social-links {
     
 
 /* se asignas las dimensiones */
+/* definí el espacio entre los elementos del header (logo y menu)*/
     .header{
         justify-content: space-between;
         width: 100%;
         margin: 0;
 
     }
-    
+    /* a*/
     .big-hero > .container{
         display: flex;
         flex-flow: column wrap;
@@ -404,18 +405,13 @@ footer .social-links {
         text-align: center;
         
     }
-       .about{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-
-       }
+  
+       /* aquí dividi el "acerca de" en 2 haciendo que esten alapar  */
        .about div{
-           flex: 1;
+        flex: 1;
 
-       }
-
-
+    }
+    /* se  colorea el menú de rojo cuando se le pasa el mouse encima*/
        nav>.show-desktop :hover>a{
         opacity: 50%;
         color: red;
